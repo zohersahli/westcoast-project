@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Westcoast Education</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="nav-container">
+      <nav>
+        <a href="index.html" class="nav-brand">
+          Westcoast Education
+        </a>
+        
+        <button id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+
+        <div id="navLinks">
+          <a href="index.html">Home</a>
+        </div>
+
+        <span id="userLinks"></span>
+      </nav>
+    </div>
+
+    <main>
+      <h1>Available Courses</h1>
+      <div id="courses-container"></div>
+    </main>
+
+    <!-- Import navigation script -->
+    <script type="module" src="scripts/navigation.js"></script>
+    <!-- Import main script -->
+    <script type="module" src="scripts/main.js"></script>
+
+    <!-- (My Bookings + Admin) -->
+    <script>
+      const user = JSON.parse(localStorage.getItem('loggedInUser'));
+      const userLinks = document.getElementById('userLinks');
+
+      if (user) {
+        let links = `
+          <a href="my-bookings.html">My Bookings</a>
+          <button id="logoutBtn">Logout</button>
+        `;
+
+        if (user.email === 'admin@example.com') {
+          links += `<a href="admin.html">Admin Panel</a>`;
+        }
+
+        userLinks.innerHTML = links;
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+          localStorage.removeItem('loggedInUser');
+          window.location.href = 'login.html';
+        });
+      } else {
+        // Login + Register
+        userLinks.innerHTML = `
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        `;
+      }
+    </script>
+  </body>
+</html>

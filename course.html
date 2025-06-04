@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Details - Westcoast Education</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="nav-container">
+    <nav>
+      <a href="index.html" class="nav-brand">
+        Westcoast Education
+      </a>
+      
+      <button id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div id="navLinks">
+        <a href="index.html">Home</a>
+      </div>
+
+      <span id="userLinks"></span>
+    </nav>
+  </div>
+
+  <main>
+    <h1>Course Details</h1>
+    <div id="course-detail"></div>
+  </main>
+
+  <!-- Import navigation script -->
+  <script type="module" src="scripts/navigation.js"></script>
+  <!-- Import course detail script -->
+  <script type="module" src="scripts/courseDetail.js"></script>
+
+  <!-- User Authentication Script -->
+  <script>
+    const user = JSON.parse(localStorage.getItem('loggedInUser'));
+    const userLinks = document.getElementById('userLinks');
+
+    if (user) {
+      let links = `
+        <a href="my-bookings.html">My Bookings</a>
+        <button id="logoutBtn">Logout</button>
+      `;
+      if (user.email === "admin@example.com") {
+        links += `<a href="admin.html">Admin Panel</a>`;
+      }
+      userLinks.innerHTML = links;
+
+      document.getElementById("logoutBtn").addEventListener("click", () => {
+        localStorage.removeItem("loggedInUser");
+        window.location.href = "login.html";
+      });
+    } else {
+      userLinks.innerHTML = `
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      `;
+    }
+  </script>
+
+</body>
+</html>

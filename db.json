@@ -1,0 +1,179 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "JavaScript Basics",
+      "number": "JS101",
+      "days": 3,
+      "type": [
+        "classroom",
+        "online"
+      ],
+      "startDate": "2025-06-15",
+      "rating": 4.5,
+      "teacher": "Anna Svensson"
+    },
+    {
+      "id": "2",
+      "title": "HTML & CSS Fundamentals",
+      "number": "WEB201",
+      "days": 2,
+      "type": [
+        "online"
+      ],
+      "startDate": "2025-07-05",
+      "rating": 4.7,
+      "teacher": "David Holm"
+    },
+    {
+      "id": "4507",
+      "title": "React",
+      "number": "RE012",
+      "days": 15,
+      "type": [
+        "online"
+      ],
+      "startDate": "2025-10-01",
+      "teacher": "Alexander Ulf",
+      "rating": 4.9
+    }
+  ],
+  "users": [
+    {
+      "id": "99",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "phone": "0709999999",
+      "address": "Stockholm"
+    },
+    {
+      "id": "1",
+      "name": "Zoher Sahli",
+      "email": "zoher@gmail.com",
+      "password": "123456",
+      "phone": "0700000000",
+      "address": "Goteborg, Sweden"
+    },
+    {
+      "id": "2",
+      "name": "Lina Karlsson",
+      "email": "lina@gmail.com",
+      "password": "654321",
+      "phone": "0701234567",
+      "address": "Malmo, Sweden"
+    },
+    {
+      "id": "1265",
+      "name": "Sara",
+      "email": "sara@gmail.com",
+      "password": "456789",
+      "phone": "0700000008",
+      "address": "Stockholm"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "userId": 1,
+      "courseId": 1,
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "courseId": 2,
+      "bookingDate": "2025-06-02"
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "courseId": 1,
+      "bookingDate": "2025-06-03"
+    },
+    {
+      "id": "1d86",
+      "userId": 1,
+      "courseId": "1",
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "4983",
+      "userId": 1,
+      "courseId": "1",
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "98d3",
+      "userId": 1,
+      "courseId": "2",
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "bb0c",
+      "userId": 1,
+      "courseId": "1",
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "1d48",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "bcf4",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "4783",
+      "userId": "1265",
+      "courseId": "1",
+      "bookingDate": "2025-06-02"
+    },
+    {
+      "id": "2dad",
+      "userId": "1265",
+      "courseId": "2",
+      "bookingDate": "2025-06-02"
+    },
+    {
+      "id": "070d",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-03"
+    },
+    {
+      "id": "7cbb",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-03"
+    },
+    {
+      "id": "04d6",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-03T21:53:33.355Z"
+    },
+    {
+      "id": "32bb",
+      "userId": "1",
+      "courseId": "2",
+      "bookingDate": "2025-06-03T21:53:38.603Z"
+    },
+    {
+      "id": "b5fc",
+      "userId": 99,
+      "courseId": "1",
+      "bookingDate": "2025-06-04T20:06:36.830Z"
+    },
+    {
+      "id": "1f30",
+      "userId": 99,
+      "courseId": "1",
+      "bookingDate": "2025-06-04T20:06:52.798Z"
+    }
+  ]
+}
