@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Westcoast Education</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Westcoast Education</a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <span id="userNav">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </span>
+      <div class="main-nav">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Admin Panel</h1>
+
+    <section id="adminControls">
+      <div id="courseForm">
+        <h2>Add New Course</h2>
+        <form id="addCourseForm">
+          <input type="text" id="title" name="title" placeholder="Course Title" required />
+          <input type="text" id="description" name="description" placeholder="Course Description" required />
+          <input type="number" id="duration" name="duration" placeholder="Duration (weeks)" required />
+          <input type="date" id="startDate" name="startDate" required />
+          <input type="text" id="teacher" name="teacher" placeholder="Teacher Name" required />
+          <select id="type" name="type" required>
+            <option value="">Select Course Type</option>
+            <option value="Online">Online</option>
+            <option value="In-Person">In-Person</option>
+            <option value="Hybrid">Hybrid</option>
+          </select>
+          <button type="submit">Add Course</button>
+          <button type="button" id="cancelEdit" style="display: none;">Cancel</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="adminDashboard">
+      <div id="coursesSection">
+        <h2>All Courses</h2>
+        <div id="coursesList" class="grid-container"></div>
+      </div>
+      
+      <div id="bookingsSection">
+        <h2>All Bookings</h2>
+        <div id="bookingsList" class="grid-container"></div>
+      </div>
+      
+      <div id="usersSection">
+        <h2>All Users</h2>
+        <div id="usersList" class="grid-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/admin.js"></script>
+</body>
+</html>

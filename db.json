@@ -1,0 +1,118 @@
+{
+  "courses": [
+    {
+      "title": "JavaScript Basics",
+      "description": "Learn the fundamentals of JavaScript programming,",
+      "duration": 7,
+      "startDate": "2025-06-15",
+      "teacher": "Anna Svensson",
+      "type": "Online",
+      "rating": 0,
+      "id": "1"
+    },
+    {
+      "title": "HTML & CSS Fundamentals",
+      "description": "Master the building blocks of web development.",
+      "duration": 5,
+      "startDate": "2025-07-05",
+      "teacher": "David Holm",
+      "type": "In-Person",
+      "rating": 0,
+      "id": "2"
+    },
+    {
+      "id": "4507",
+      "title": "React",
+      "description": "Dive into modern web development with React.",
+      "duration": 15,
+      "startDate": "2025-10-01",
+      "teacher": "Alexander Ulf",
+      "type": "Hybrid",
+      "rating": 0
+    }
+  ],
+  "users": [
+    {
+      "id": "99",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "phone": "0709999999",
+      "address": "Stockholm"
+    },
+    {
+      "id": "1",
+      "name": "Zoher Sahli",
+      "email": "zoher@gmail.com",
+      "password": "123456",
+      "phone": "0700000000",
+      "address": "Goteborg, Sweden"
+    },
+    {
+      "id": "2",
+      "name": "Lina Karlsson",
+      "email": "lina@gmail.com",
+      "password": "654321",
+      "phone": "0701234567",
+      "address": "Malmo, Sweden"
+    },
+    {
+      "id": "1265",
+      "name": "Sara",
+      "email": "sara@gmail.com",
+      "password": "456789",
+      "phone": "0700000008",
+      "address": "Stockholm"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "userId": 1,
+      "courseId": 1,
+      "bookingDate": "2025-06-01"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "courseId": 2,
+      "bookingDate": "2025-06-02"
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "courseId": 1,
+      "bookingDate": "2025-06-03"
+    },
+    {
+      "id": "4783",
+      "userId": "1265",
+      "courseId": "1",
+      "bookingDate": "2025-06-02"
+    },
+    {
+      "id": "070d",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-03"
+    },
+    {
+      "id": "7cbb",
+      "userId": "1",
+      "courseId": "1",
+      "bookingDate": "2025-06-03"
+    },
+    {
+      "id": "1749585521113",
+      "courseId": "4507",
+      "userId": "1",
+      "bookingDate": "2025-06-10T19:58:41.113Z"
+    },
+    {
+      "id": "1749588365195",
+      "courseId": "2",
+      "userId": "1",
+      "bookingDate": "2025-06-10T20:46:05.195Z"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookings - Westcoast Education</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Westcoast Education</a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <span id="userNav">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </span>
+      <div class="main-nav">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>My Bookings</h1>
+    <div id="bookingsList" class="bookings-grid"></div>
+  </main>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/myBookings.js"></script>
+</body>
+</html>

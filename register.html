@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Westcoast Education</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Westcoast Education</a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <span id="userNav">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </span>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Register</h1>
+    <form id="registerForm">
+      <div class="form-group">
+        <input type="text" id="firstName" placeholder="First Name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="lastName" placeholder="Last Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="phone" placeholder="Phone" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="address" placeholder="Address" required />
+      </div>
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </main>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/register.js"></script>
+</body>
+</html>
